@@ -23,7 +23,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
                 ("name", models.CharField(max_length=64)),
-                ("is_active", models.BooleanField()),
+                ("is_active", models.BooleanField(default=True, null=True, blank=True)),
             ],
         ),
         migrations.CreateModel(
@@ -39,7 +39,7 @@ class Migration(migrations.Migration):
                     ),
                 ),
                 ("name", models.CharField(max_length=64)),
-                ("is_active", models.BooleanField(null=True)),
+                ("is_active", models.BooleanField(default=True, null=True, blank=True)),
             ],
         ),
     ]

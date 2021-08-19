@@ -6,10 +6,10 @@ from django_remove_field import deprecated_fields, removed_fields
 @deprecated_fields(["is_active"])
 class ModelWithDeprecatedField(models.Model):
     name = models.CharField(max_length=64)
-    is_active = models.BooleanField()
+    is_active = models.BooleanField(default=True, null=True, blank=True)
 
 
 @removed_fields(["is_active"])
 class ModelWithRemovedField(models.Model):
     name = models.CharField(max_length=64)
-    is_active = models.BooleanField(null=True)
+    is_active = models.BooleanField(default=True, null=True, blank=True)

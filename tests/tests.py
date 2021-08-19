@@ -3,7 +3,6 @@ import os
 import unittest
 from io import StringIO
 
-from django.core.exceptions import FieldError
 from django.core.management import call_command
 from django.test import TestCase
 
@@ -52,11 +51,6 @@ class RemovedFieldTests(TestCase):
     def test_create_in_db(self):
         models.ModelWithRemovedField.objects.create(name="test")
         self.assertEqual(models.ModelWithRemovedField.objects.count(), 1)
-
-    def test_querying_removed_field_raise(self):
-        models.ModelWithRemovedField.objects.create(name="test")
-        with self.assertRaises(FieldError):
-            models.ModelWithRemovedField.objects.filter(is_active=True)
 
     def test_init_raise(self):
         with self.subTest("on new instance"):
