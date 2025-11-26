@@ -4,16 +4,16 @@ multi_line_output = 3
 
 [tool.poetry]
 name = "django-remove-field"
-version = "0.2.0"
+version = "0.3.0"
 description = "Handle deletion of django model field without downtime"
-authors = ["Your Name <you@example.com>"]
-license = "GPL-3.0-or-later"
+authors = ["tech@klarys.io"]
+license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = ">=3.11"
 
 [tool.poetry.dev-dependencies]
-django = ">=2.2"
+django = ">=4.2"
 
 [build-system]
 requires = ["poetry>=0.12"]
