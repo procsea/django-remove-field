@@ -4,7 +4,7 @@ multi_line_output = 3
 
 [project]
 name = "django-remove-field"
-version = "0.3.2"
+version = "0.3.0"
 description = "Handle deletion of django model field without downtime"
 authors = [
     { name = "Klarys Tech Team", email = "tech@klarys.io" },
