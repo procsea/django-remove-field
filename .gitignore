@@ -94,6 +94,11 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
+# poetry
+#   This is a library: dependencies are resolved by the projects that install it,
+#   so we don't pin them here.
+poetry.lock
+
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
 
