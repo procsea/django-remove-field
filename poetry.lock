@@ -38,15 +38,19 @@ bcrypt = ["bcrypt"]
 
 [[package]]
 name = "sqlparse"
-version = "0.4.1"
+version = "0.6.0"
 description = "A non-validating SQL parser."
 optional = false
-python-versions = ">=3.5"
+python-versions = ">=3.10"
 groups = ["main"]
 files = [
-    {file = "sqlparse-0.4.1-py3-none-any.whl", hash = "sha256:017cde379adbd6a1f15a61873f43e8274179378e95ef3fede90b5aa64d304ed0"},
-    {file = "sqlparse-0.4.1.tar.gz", hash = "sha256:0f91fd2e829c44362cbcfab3e9ae12e22badaa8a29ad5ff599f9ec109f0454e8"},
+    {file = "sqlparse-0.6.0-py3-none-any.whl", hash = "sha256:b861c0288ce2fa56209a9a6412d2e066ac664b3873b89c26c9d8415e8e32996f"},
+    {file = "sqlparse-0.6.0.tar.gz", hash = "sha256:113c35c75365ab9cc9c7231d68c6428fb11c085fc8e9eb1ad659b7ddbf6cd2b9"},
 ]
+
+[package.extras]
+dev = ["build"]
+doc = ["furo", "sphinx"]
 
 [[package]]
 name = "tzdata"
